@@ -28,7 +28,7 @@ function About() {
               Contact
             </button>
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-2xl md:text-3xl font-bold mb-4 uppercase">
             Exceptional Culinary <br /> Experience and Delicious Food
           </h2>
           <p className="mb-6 text-sm md:text-base lg:text-lg text-gray-700">
