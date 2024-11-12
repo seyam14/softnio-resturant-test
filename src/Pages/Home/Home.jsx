@@ -1,11 +1,19 @@
+import About from "../../components/About/About";
+import BookingForm from "../../components/BookingForm/BookingForm";
+import FoodItems from "../../components/FoodItems/FoodItems";
+import Hero from "../../components/Hero/Hero";
+import Testimonials from "../../components/Testimonials/Testimonials";
 
 
 const Home = () => {
     return (
         <div>
-            <h1 className="text-3xl font-bold underline">
-            Hello Home!
-           </h1>
+           <Hero></Hero>
+           <About></About>
+           <FoodItems></FoodItems>
+           <Testimonials></Testimonials>
+           <BookingForm></BookingForm>
+           
         </div>
     );
 };

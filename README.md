@@ -1,8 +1,35 @@
-# React + Vite
+# Restaurant Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a responsive restaurant website built with React and Tailwind CSS, showcasing an authentic Saudi cuisine experience.
 
-Currently, two official plugins are available:
+## Project Structure
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The project is broken down into reusable components:
+- **Header**: Sticky navigation bar
+- **Hero**: Main banner with heading and call-to-action
+- **About**: Section describing the restaurant
+- **FoodItems**: Carousel of popular food items
+- **Testimonials**: Slider showcasing customer reviews
+- **BookingForm**: Form to book a table
+- **Footer**: Contact information and footer
+
+## Technologies Used
+- React
+- Tailwind CSS
+- react-slick for carousel functionality
+
+## Setup and Installation
+
+1. Clone the repository:
+   ```bash
+   git clone ....
+   cd restaurant-website
+
+2. Install dependencies:
+
+npm install
+
+
+3. Start the development server:
+
+npm start
