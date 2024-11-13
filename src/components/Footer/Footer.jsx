@@ -1,21 +1,21 @@
 import React from 'react';
 import { FiClock, FiPhone, FiMail, FiMapPin } from 'react-icons/fi';
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import footerImage from '/src/assets/footer.jpeg';
 
 const Footer = () => {
   return (
-    <footer className="relative text-white py-10 ">
-      {/* Background image */}
+    <footer className="relative text-white py-10"> 
       <div
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: "url('/src/assets/footer.jpeg')" }}
+        style={{ backgroundImage: `url(${footerImage})` }} 
       ></div>
 
       {/* Black overlay */}
       <div className="absolute inset-0 bg-black opacity-60"></div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 text-center max-w-6xl ">
+      <div className="relative z-10 container mx-auto px-4 text-center max-w-6xl">
         <h2 className="text-2xl md:text-3xl font-semibold mb-6">
           We’re Ready to Have You the Best Dining Experiences
         </h2>
@@ -45,8 +45,8 @@ const Footer = () => {
           <div>
             <FiMapPin className="mx-auto text-2xl mb-2" />
             <h3 className="font-semibold uppercase">Our Address</h3>
-            <p>123 Stree New York City , United </p>
-            <p>States Of America.</p>
+            <p>123 Street, New York City</p>
+            <p>United States of America</p>
           </div>
         </div>
         
