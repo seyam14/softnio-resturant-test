@@ -10,29 +10,9 @@ const Testimonials = () => (
       <h2 className="text-2xl font-bold mb-6 uppercase text-center lg:text-left">
         What Some of My Customers Say
       </h2>
-      <div className="flex flex-col lg:flex-row items-center lg:items-stretch justify-center mx-auto">
-        {/* Left */}
-        <div className="flex flex-col justify-center items-center lg:items-start text-center lg:text-left bg-yellow-300 text-gray-800 rounded-lg shadow-md w-full lg:w-1/2 p-6">
-          <FaQuoteLeft className="text-3xl text-gray-700 mb-4" />
-          <p className="text-lg leading-relaxed">
-            "You can't go wrong with Chicken Mandi. I had it twice. The chicken
-            was cooked perfectly, juicy & soft (usually mandi chicken is a bit
-            dry). I would definitely recommend it."
-          </p>
-          <div className="flex items-center mt-4 space-x-4">
-            <img
-              src="https://via.placeholder.com/40"
-              alt="User"
-              className="w-10 h-10 rounded-full"
-            />
-            <div>
-              <h5 className="font-bold capitalize">Khalid Al Dawsry</h5>
-              <p className="text-sm capitalize">Jeddah, Saudi</p>
-            </div>
-          </div>
-        </div>
-
-        {/* Right */}
+      
+      <div className="flex flex-col-reverse lg:flex-row-reverse items-center lg:items-stretch justify-center mx-auto">
+        {/* Image  */}
         <div className="relative flex items-center justify-center h-80 w-full lg:w-1/2 mt-6 lg:mt-0 rounded-lg overflow-hidden shadow-lg">
           <img src={image} alt="Dish" className="w-full h-full object-cover" />
           <button className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white">
@@ -52,14 +32,34 @@ const Testimonials = () => (
             </svg>
           </button>
         </div>
+
+        <div className="flex flex-col justify-center items-center lg:items-start text-center lg:text-left bg-yellow-400 text-gray-800 rounded-lg shadow-md w-full lg:w-1/2 p-6">
+          <FaQuoteLeft className="text-3xl text-gray-700 mb-4" />
+          <p className="text-lg leading-relaxed">
+            "You can't go wrong with Chicken Mandi. I had it twice. The chicken
+            was cooked perfectly, juicy & soft (usually mandi chicken is a bit
+            dry). I would definitely recommend it."
+          </p>
+          <div className="flex items-center mt-4 space-x-4">
+            <img
+              src="https://via.placeholder.com/40"
+              alt="User"
+              className="w-10 h-10 rounded-full"
+            />
+            <div>
+              <h5 className="font-bold capitalize">Khalid Al Dawsry</h5>
+              <p className="text-sm capitalize">Jeddah, Saudi</p>
+            </div>
+          </div>
+        </div>
       </div>
 
-      {/* arrows */}
+      
       <div className="absolute top-1/2 transform -translate-y-1/2 left-4 hidden lg:block">
-        <FaChevronLeft className="text-2xl text-gray-600 cursor-pointer" />
+        <FaChevronLeft className="text-2xl text-gray-800 cursor-pointer" />
       </div>
       <div className="absolute top-1/2 transform -translate-y-1/2 right-4 hidden lg:block">
-        <FaChevronRight className="text-2xl text-gray-600 cursor-pointer" />
+        <FaChevronRight className="text-2xl text-gray-800 cursor-pointer" />
       </div>
     </div>
   </div>
