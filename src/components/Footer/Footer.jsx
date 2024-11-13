@@ -45,8 +45,8 @@ const Footer = () => {
           <div>
             <FiMapPin className="mx-auto text-2xl mb-2" />
             <h3 className="font-semibold uppercase">Our Address</h3>
-            <p>123 Street, New York City</p>
-            <p>United States of America</p>
+            <p>123 Street, New York City,United </p>
+            <p>states of America</p>
           </div>
         </div>
         
