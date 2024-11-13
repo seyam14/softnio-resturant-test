@@ -49,6 +49,7 @@ function FoodItems() {
 
   return (
     <section className="p-8 bg-orange-50">
+      <div className='max-w-6xl mx-auto'>
       <p className='text-sm text-red-600 font-bold'>Crispy, Every Bite Taste</p>
       <h2 className="text-2xl font-bold mb-6 uppercase">POPULAR FOOD ITEMS</h2>
       <Slider {...settings}>
@@ -64,6 +65,7 @@ function FoodItems() {
           </div>
         ))}
       </Slider>
+      </div>
     </section>
   );
 }
