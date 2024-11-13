@@ -1,6 +1,4 @@
 import React from 'react';
-
-// Import the background image
 import bgImage from "../../assets/Booking form.jpeg";
 
 function BookingForm() {
