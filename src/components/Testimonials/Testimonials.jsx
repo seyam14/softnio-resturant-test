@@ -11,29 +11,9 @@ const Testimonials = () => (
         What Some of My Customers Say
       </h2>
       
-      <div className="flex flex-col-reverse lg:flex-row-reverse items-center lg:items-stretch justify-center mx-auto">
-        {/* Image  */}
-        <div className="relative flex items-center justify-center h-80 w-full lg:w-1/2 mt-6 lg:mt-0 rounded-lg overflow-hidden shadow-lg">
-          <img src={image} alt="Dish" className="w-full h-full object-cover" />
-          <button className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-12 w-12"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M14.752 11.168l-3.197-2.132A1 1 0 0010 10v4a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
-              />
-            </svg>
-          </button>
-        </div>
-
-        <div className="flex flex-col justify-center items-center lg:items-start text-center lg:text-left bg-yellow-400 text-gray-800 rounded-lg shadow-md w-full lg:w-1/2 p-6">
+      <div className="flex flex-col lg:flex-row items-center lg:items-stretch justify-center mx-auto">
+        {/* Text */}
+        <div className="flex flex-col justify-center items-center lg:items-start text-center lg:text-left bg-yellow-400 text-gray-800 rounded-lg shadow-md w-full lg:w-1/2 p-6 order-2 lg:order-1">
           <FaQuoteLeft className="text-3xl text-gray-700 mb-4" />
           <p className="text-lg leading-relaxed">
             "You can't go wrong with Chicken Mandi. I had it twice. The chicken
@@ -52,9 +32,29 @@ const Testimonials = () => (
             </div>
           </div>
         </div>
+
+        {/* Image */}
+        <div className="relative flex items-center justify-center h-80 w-full lg:w-1/2 mb-6 lg:mb-0 rounded-lg overflow-hidden shadow-lg order-1 lg:order-2">
+          <img src={image} alt="Dish" className="w-full h-full object-cover" />
+          <button className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-12 w-12"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M14.752 11.168l-3.197-2.132A1 1 0 0010 10v4a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
+              />
+            </svg>
+          </button>
+        </div>
       </div>
 
-      
       <div className="absolute top-1/2 transform -translate-y-1/2 left-4 hidden lg:block">
         <FaChevronLeft className="text-2xl text-gray-800 cursor-pointer" />
       </div>
